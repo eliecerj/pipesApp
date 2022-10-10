@@ -14,6 +14,12 @@ import { OrderComponent } from './pages/order/order.component';
     BasicsComponent,
     OrderComponent
   ],
+  exports: [
+    NumbersComponent,
+    UncommonsComponent,
+    BasicsComponent,
+    OrderComponent
+  ],
   imports: [
     CommonModule
   ]
