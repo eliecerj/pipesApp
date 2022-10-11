@@ -2,9 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRouterModule } from './app-router.module';
 
+// Módulo personalizado
 import { AppComponent } from './app.component';
+import { SalesModule } from './sales/sales.module';
 import { SharedModule } from './shared/shared.module';
-import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRouterModule,
-    SharedModule,
+    SalesModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
