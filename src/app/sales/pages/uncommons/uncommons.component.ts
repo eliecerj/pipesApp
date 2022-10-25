@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UncommonsComponent implements OnInit {
 
+  name: string = 'Eliecer';
+  genre: string = 'male';
+
+  invitationMap = {
+    'male': 'invitarlo',
+    'female': 'invitarla'
+  }
+
   constructor() { }
 
   ngOnInit(): void {

@@ -8,8 +8,21 @@
         <p-card header="Ventas Netas"
                 subheader="del presente año">
                 <i class="pi pi-dollar"></i>
-                {{ netSales | number: '1.4-4' }}
+                {{ netSales + 1000000 | number: '1.4-4' }}
+        </p-card>
+    </div>
 
+    <div class="p-col-4">
+        <p-card header="Ventas Brutas"
+                subheader="del presente año">
+                {{ netSales + 2000000 | currency: 'USD': 'symbol-narrow': '1.0-4' }}
+        </p-card>
+    </div>
+
+    <div class="p-col-4">
+        <p-card header="Ganancia porcentual"
+                subheader="del presente año">
+                {{ percentage | percent: '2.2-2' }}
         </p-card>
     </div>
 </div>
