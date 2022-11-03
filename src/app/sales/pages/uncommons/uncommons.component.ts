@@ -25,9 +25,28 @@ export class UncommonsComponent implements OnInit {
     'other': 'tenemos # clientes esperando'
   }
 
+  //keyValue 
+
+  data = {
+    name: 'Eliecer',
+    address: 'Santiago, Chile',
+    age: 27
+  }
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  changePerson() {
+    this.name = 'Sanet';
+    this.genre = 'female';
+  }
+
+  deleteClient() {
+    this.clients.shift();
+  }
+
+  
 
 }
