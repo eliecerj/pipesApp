@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-uncommons',
@@ -32,6 +33,32 @@ export class UncommonsComponent implements OnInit {
     address: 'Santiago, Chile',
     age: 27
   }
+
+  //Json pipes
+  heroes = [
+    {
+      name: "Superman",
+      fly: true
+    },
+    {
+      name: "Robin",
+      fly: false
+    },
+    {
+      name: "Aquaman",
+      fly: false
+    }
+
+  ]
+
+  // ASync Pipe
+  myObservable = interval(1000);
+
+  promiseValue = new Promise((resolve) => {
+    setTimeout(() => {
+      resolve('Tenemos data promesa')
+    }, 5000)
+  });
 
   constructor() { }
 
