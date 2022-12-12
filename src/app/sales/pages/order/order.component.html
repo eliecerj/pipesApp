@@ -1,1 +1,11 @@
-<p>order works!</p>
+<div class="text-layout">
+    <h1>Pipes personalizados</h1>
+    <p>Pipes creados por {{'nosotros' | uupercase:upperLowerCase }}</p>
+    <button 
+        pButton pRipple 
+        type="button" 
+        label="toggle mayúsculas" 
+        class="p-button-rounded p-button-danger"
+        (click)="upperOrLowerCase()">
+    </button>
+</div>

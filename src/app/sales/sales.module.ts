@@ -6,6 +6,8 @@ import { BasicsComponent } from './pages/basics/basics.component';
 import { OrderComponent } from './pages/order/order.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
+import { UuppePipe } from './pipes/uuppercase.pipe';
+
 
 
 @NgModule({
@@ -13,7 +15,8 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
     NumbersComponent,
     UncommonsComponent,
     BasicsComponent,
-    OrderComponent
+    OrderComponent,
+    UuppePipe
   ],
   exports: [
     NumbersComponent,
