@@ -11,6 +11,7 @@ export class OrderComponent {
   constructor() { }
 
   upperLowerCase: boolean = false;
+  orderBy: string = '';
   heroes: Heroe[] = [
     {
       name: 'Superman',
@@ -41,5 +42,11 @@ export class OrderComponent {
 
   upperOrLowerCase() {
     this.upperLowerCase = !this.upperLowerCase;
+  }
+
+  changeOrder(value: string) {
+    this.orderBy = value;
+    console.log(value);
+    
   }
 }

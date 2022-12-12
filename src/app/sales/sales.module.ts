@@ -8,6 +8,7 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 import { UuppePipe } from './pipes/uuppercase.pipe';
 import { FlightPipe } from './pipes/flight.pipe';
+import { OrderPipe } from './pipes/order.pipe';
 
 
 
@@ -18,7 +19,8 @@ import { FlightPipe } from './pipes/flight.pipe';
     BasicsComponent,
     OrderComponent,
     UuppePipe,
-    FlightPipe
+    FlightPipe,
+    OrderPipe
   ],
   exports: [
     NumbersComponent,
