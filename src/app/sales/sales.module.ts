@@ -7,6 +7,7 @@ import { OrderComponent } from './pages/order/order.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 import { UuppePipe } from './pipes/uuppercase.pipe';
+import { FlightPipe } from './pipes/flight.pipe';
 
 
 
@@ -16,7 +17,8 @@ import { UuppePipe } from './pipes/uuppercase.pipe';
     UncommonsComponent,
     BasicsComponent,
     OrderComponent,
-    UuppePipe
+    UuppePipe,
+    FlightPipe
   ],
   exports: [
     NumbersComponent,
